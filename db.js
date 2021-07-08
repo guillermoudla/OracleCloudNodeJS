@@ -1,8 +1,8 @@
 const oracledb = require('oracledb');
 
-oracledb.initOracleClient({ libDir: process.env.DATA_KEY||'C:\\instantclient_19_11'});
+//oracledb.initOracleClient({ libDir: process.env.DATA_KEY||'C:\\instantclient_19_11'});
 
-//oracledb.initOracleClient({ libDir: process.env.DATA_KEY||'/usr/lib/oracle/21/client64/bin' });
+oracledb.initOracleClient({ libDir: process.env.DATA_KEY||'/usr/lib/oracle/21/client64/bin' });
 
 class Db {
     static instance=new Db();
